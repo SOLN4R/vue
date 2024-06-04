@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('fonts/Montserrat-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('fonts/Montserrat-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #121212;
+    padding: 50px 55px 60px 55px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.header {
+    font-family: 'Montserrat-Bold';
+    font-size: 1.5rem;
+    color: #E0E0E0;
+}
+
+.description {
+    font-family: 'Montserrat-Regular';
+    font-size: 1rem;
+    color: #E0E0E0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.custom-input {
+    width: 450px;
+    height: 56px;
+    background-color: #1E1E1E;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-sizing: border-box;
+    padding: 0 24px;
+}
+
+
+.custom-input input {
+    flex: 1;
+    border: none;
+    background: none;
+    padding: 0;
+    outline: none;
+    font-family: 'Montserrat-Regular';
+    font-size: 1rem;
+    color: #E0E0E0;
+}
+
+.input-error {
+    display: none;
+    gap: 12px;
+}
+
+.input-error-message {
+    font-family: 'Montserrat-Regular';
+    font-size: 0.875rem;
+    color: #fa6a6a;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 24px;
+}
+
+button {
+    height: 56px;
+    width: 100%;
+    background-color: #1E1E1E;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Montserrat-Medium';
+    font-size: 1rem;    
+    color: #E0E0E0;
+    cursor: pointer;
+    outline: none;
+}
+
+.button-active {
+    background-color: #007BFF;
+}
+.button-active:hover {
+    background-color: #0071eb;
+}
+.button-active:active {
+    background-color: #0056b3;
+}
+
+.forgot-password {
+    font-family: 'Montserrat-Regular';
+    font-size: 1rem;
+    color: #E0E0E0;
+    text-decoration: none;
+    text-align: center;
+}
+
+.recovery {
+    font-family: 'Montserrat-Medium';
+    color: #007BFF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.recovery:hover {
+    color: #0071eb;
+}   
+.recovery:active {
+    color: #0056b3;
+}
+
+.custom-input-error {
+    border: 1px solid #fa6a6a;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.display-none {
+    display: none;
+}
+
+input::selection {
+    background-color: #E0E0E0;
+    color: #1E1E1E;
+}
+
+.switch-type-authentication:hover {
+    background-color: #242424;
+}
+.switch-type-authentication:active {
+    background-color: #181818;
+}
+
+.checkbox-container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    background-color: #1E1E1E;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
